@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Replace Ruby with Bash, because why not?}
   spec.description   = %q{Inspired by Gary Bernhardt's excellent wat talk.}
-  spec.homepage      = "https://github.com:Widdershin/wat-shell"
+  spec.homepage      = "https://github.com/Widdershin/wat-shell"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
