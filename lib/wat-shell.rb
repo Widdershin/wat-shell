@@ -14,6 +14,10 @@ module Wat
           [method, *args].join(' ')
         end
       end
+
+      def Object.const_missing(const)
+        const.to_s
+      end
     end
   end
 end
