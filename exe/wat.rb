@@ -29,4 +29,12 @@ def run
   end
 end
 
-run
+if ARGV.size > 0
+  Wat.included(self)
+
+  path_to_load = File.join(Dir.pwd, ARGV.shift)
+
+  require path_to_load
+else
+  run
+end
