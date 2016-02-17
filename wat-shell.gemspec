@@ -11,11 +11,11 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Replace Ruby with Bash, because why not?}
   spec.description   = %q{Inspired by Gary Bernhardt's excellent wat talk.}
-  spec.homepage      = "git@github.com:Widdershin/wat-shell.git"
+  spec.homepage      = "https://github.com:Widdershin/wat-shell"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ["wat"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.10"
